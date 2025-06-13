@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище traintryModelContainer" CdmEntityContainer="traintryEntities">
+    <EntitySetMapping Name="climateTechType">
+      <EntityTypeMapping TypeName="traintryModel.climateTechType">
+        <MappingFragment StoreEntitySet="climateTechType">
+          <ScalarProperty Name="climateTechTypeID" ColumnName="climateTechTypeID" />
+          <ScalarProperty Name="climateTechType1" ColumnName="climateTechType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comment">
+      <EntityTypeMapping TypeName="traintryModel.comment">
+        <MappingFragment StoreEntitySet="comment">
+          <ScalarProperty Name="commentID" ColumnName="commentID" />
+          <ScalarProperty Name="messageID" ColumnName="messageID" />
+          <ScalarProperty Name="masterID" ColumnName="masterID" />
+          <ScalarProperty Name="requestID" ColumnName="requestID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master">
+      <EntityTypeMapping TypeName="traintryModel.Master">
+        <MappingFragment StoreEntitySet="Master">
+          <ScalarProperty Name="masterID" ColumnName="masterID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="message">
+      <EntityTypeMapping TypeName="traintryModel.message">
+        <MappingFragment StoreEntitySet="message">
+          <ScalarProperty Name="messageID" ColumnName="messageID" />
+          <ScalarProperty Name="messageName" ColumnName="messageName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="request">
+      <EntityTypeMapping TypeName="traintryModel.request">
+        <MappingFragment StoreEntitySet="request">
+          <ScalarProperty Name="requestID" ColumnName="requestID" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="climateTechTypeID" ColumnName="climateTechTypeID" />
+          <ScalarProperty Name="climateTechModel" ColumnName="climateTechModel" />
+          <ScalarProperty Name="problemDescryption" ColumnName="problemDescryption" />
+          <ScalarProperty Name="requestStatusID" ColumnName="requestStatusID" />
+          <ScalarProperty Name="completionDate" ColumnName="completionDate" />
+          <ScalarProperty Name="repairParts" ColumnName="repairParts" />
+          <ScalarProperty Name="masterID" ColumnName="masterID" />
+          <ScalarProperty Name="clientID" ColumnName="clientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="requestStatus">
+      <EntityTypeMapping TypeName="traintryModel.requestStatus">
+        <MappingFragment StoreEntitySet="requestStatus">
+          <ScalarProperty Name="requestStatusID" ColumnName="requestStatusID" />
+          <ScalarProperty Name="requestStatusName" ColumnName="requestStatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="traintryModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="traintryModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="fio" ColumnName="fio" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="typeID" ColumnName="typeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

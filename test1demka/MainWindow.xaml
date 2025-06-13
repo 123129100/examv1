@@ -1,0 +1,82 @@
+﻿<Window x:Class="test1demka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test1demka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10,10,10,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Search Box -->
+        <TextBox x:Name="textSearch" 
+                 Grid.Row="0" 
+                 Text="search" 
+                 TextChanged="textSearch_TextChanged"
+                 Margin="0,0,0,10"
+                 Padding="5"
+                 HorizontalAlignment="Stretch"/>
+
+        <!-- DataGrid -->
+        <Border Grid.Row="1" 
+                BorderBrush="Black" 
+                Margin="0,0,0,10">
+            <DataGrid x:Name="datagrid" 
+                     AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="StartDate" Binding="{Binding startDate}" Width="*"/>
+                    <DataGridTextColumn Header="climateTechModel" Binding="{Binding problemDescryption}" Width="*"/>
+                    <DataGridTextColumn Header="climateTechType" Binding="{Binding climateTechType.climateTechType1}" Width="*"/>
+                    <DataGridTextColumn Header="Request Status" Binding="{Binding requestStatus.requestStatusName}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <!-- Action Buttons - Centered -->
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center"
+                    Margin="0,0,0,10">
+            <Button x:Name="btn_add" 
+                    Content="Добавить новый" 
+                    Width="120" 
+                    Margin="0,0,10,0" 
+                    Click="btn_add_Click"/>
+            <Button x:Name="btn_delete" 
+                    Content="Удалить выбранное" 
+                    Width="120" 
+                    Margin="0,0,10,0"
+                    Click="btn_delete_Click"/>
+            <Button x:Name="btn_update"
+                    Content="Редактировать" 
+                    Width="120"
+                    Click="btn_update_Click"/>
+        </StackPanel>
+
+        <!-- Pagination - Centered -->
+        <StackPanel Grid.Row="3" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button Content="Назад" 
+                    Click="PrevPage" 
+                    Width="70" 
+                    Margin="0,0,10,0"/>
+            <TextBlock x:Name="PageInfo" 
+                       VerticalAlignment="Center"
+                       Margin="5,0"/>
+            <Button Content="Вперед" 
+                    Click="NextPage" 
+                    Width="70" 
+                    Margin="10,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

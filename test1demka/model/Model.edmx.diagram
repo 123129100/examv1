@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="375a569718d743d388562bfe746372dd" Name="Diagram1">
+        <EntityTypeShape EntityType="traintryModel.climateTechType" Width="1.5" PointX="3.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.comment" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.Master" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.message" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.request" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.requestStatus" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="traintryModel.User" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <AssociationConnector Association="traintryModel.FK_request_climateTechType" ManuallyRouted="false" />
+        <AssociationConnector Association="traintryModel.FK_comment_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="traintryModel.FK_comment_message" ManuallyRouted="false" />
+        <AssociationConnector Association="traintryModel.FK_request_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="traintryModel.FK_User_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="traintryModel.FK_request_requestStatus" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

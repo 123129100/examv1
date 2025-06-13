@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище traintry1Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="climateTechType">
+    <Key>
+      <PropertyRef Name="climateTechTypeID" />
+    </Key>
+    <Property Name="climateTechTypeID" Type="int" Nullable="false" />
+    <Property Name="climateTechType" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="comment">
+    <Key>
+      <PropertyRef Name="commentID" />
+    </Key>
+    <Property Name="commentID" Type="int" Nullable="false" />
+    <Property Name="messageID" Type="int" Nullable="false" />
+    <Property Name="masterID" Type="int" Nullable="false" />
+    <Property Name="requestID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Master">
+    <Key>
+      <PropertyRef Name="masterID" />
+    </Key>
+    <Property Name="masterID" Type="int" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="message">
+    <Key>
+      <PropertyRef Name="messageID" />
+    </Key>
+    <Property Name="messageID" Type="int" Nullable="false" />
+    <Property Name="messageName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="request">
+    <Key>
+      <PropertyRef Name="requestID" />
+    </Key>
+    <Property Name="requestID" Type="tinyint" Nullable="false" />
+    <Property Name="startDate" Type="date" Nullable="false" />
+    <Property Name="climateTechTypeID" Type="int" Nullable="false" />
+    <Property Name="climateTechModel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="problemDescryption" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="requestStatusID" Type="int" Nullable="false" />
+    <Property Name="completionDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="repairParts" Type="nvarchar" MaxLength="1" />
+    <Property Name="masterID" Type="int" />
+    <Property Name="clientID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="requestStatus">
+    <Key>
+      <PropertyRef Name="requestStatusID" />
+    </Key>
+    <Property Name="requestStatusID" Type="int" Nullable="false" />
+    <Property Name="requestStatusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="fio" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="bigint" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="typeID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_comment_Master">
+    <End Role="Master" Type="Self.Master" Multiplicity="1" />
+    <End Role="comment" Type="Self.comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Master">
+        <PropertyRef Name="masterID" />
+      </Principal>
+      <Dependent Role="comment">
+        <PropertyRef Name="masterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_comment_message">
+    <End Role="message" Type="Self.message" Multiplicity="1" />
+    <End Role="comment" Type="Self.comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="message">
+        <PropertyRef Name="messageID" />
+      </Principal>
+      <Dependent Role="comment">
+        <PropertyRef Name="messageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_request_climateTechType">
+    <End Role="climateTechType" Type="Self.climateTechType" Multiplicity="1" />
+    <End Role="request" Type="Self.request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="climateTechType">
+        <PropertyRef Name="climateTechTypeID" />
+      </Principal>
+      <Dependent Role="request">
+        <PropertyRef Name="climateTechTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_request_Master">
+    <End Role="Master" Type="Self.Master" Multiplicity="0..1" />
+    <End Role="request" Type="Self.request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Master">
+        <PropertyRef Name="masterID" />
+      </Principal>
+      <Dependent Role="request">
+        <PropertyRef Name="masterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_request_requestStatus">
+    <End Role="requestStatus" Type="Self.requestStatus" Multiplicity="1" />
+    <End Role="request" Type="Self.request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="requestStatus">
+        <PropertyRef Name="requestStatusID" />
+      </Principal>
+      <Dependent Role="request">
+        <PropertyRef Name="requestStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Master">
+    <End Role="Master" Type="Self.Master" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Master">
+        <PropertyRef Name="masterID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="typeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище traintry1ModelContainer">
+    <EntitySet Name="climateTechType" EntityType="Self.climateTechType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="comment" EntityType="Self.comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Master" EntityType="Self.Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="message" EntityType="Self.message" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="request" EntityType="Self.request" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="requestStatus" EntityType="Self.requestStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_comment_Master" Association="Self.FK_comment_Master">
+      <End Role="Master" EntitySet="Master" />
+      <End Role="comment" EntitySet="comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_comment_message" Association="Self.FK_comment_message">
+      <End Role="message" EntitySet="message" />
+      <End Role="comment" EntitySet="comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_request_climateTechType" Association="Self.FK_request_climateTechType">
+      <End Role="climateTechType" EntitySet="climateTechType" />
+      <End Role="request" EntitySet="request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_request_Master" Association="Self.FK_request_Master">
+      <End Role="Master" EntitySet="Master" />
+      <End Role="request" EntitySet="request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_request_requestStatus" Association="Self.FK_request_requestStatus">
+      <End Role="requestStatus" EntitySet="requestStatus" />
+      <End Role="request" EntitySet="request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Master" Association="Self.FK_User_Master">
+      <End Role="Master" EntitySet="Master" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
