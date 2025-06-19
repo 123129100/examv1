@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user123\\source\\repos\\test1demka\\",
+  "WorkspaceRootPath": "C:\\Users\\user123\\source\\repos\\examv1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|c:\\users\\user123\\source\\repos\\test1demka\\test1demka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|c:\\users\\user123\\source\\repos\\examv1\\test1demka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\addnew.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\addnew.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\addnew.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\addnew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\addnew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\addnew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\model\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\model\\model.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{525FBCAC-4A72-4FC4-AF10-ED4AB64969C0}|test1demka\\test1demka.csproj|solutionrelative:test1demka\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -38,15 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\App.config",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\App.config",
               "RelativeDocumentMoniker": "test1demka\\App.config",
-              "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\App.config",
+              "ToolTip": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\App.config",
               "RelativeToolTip": "test1demka\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -56,11 +56,11 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Addnew.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\Addnew.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\Addnew.xaml.cs",
               "RelativeDocumentMoniker": "test1demka\\Addnew.xaml.cs",
-              "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\Addnew.xaml.cs",
+              "ToolTip": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\Addnew.xaml.cs",
               "RelativeToolTip": "test1demka\\Addnew.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAqwGQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAcwH0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T07:57:30.932Z"
             },
@@ -68,23 +68,22 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Addnew.xaml",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\Addnew.xaml",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\Addnew.xaml",
               "RelativeDocumentMoniker": "test1demka\\Addnew.xaml",
-              "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\Addnew.xaml",
+              "ToolTip": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\Addnew.xaml",
               "RelativeToolTip": "test1demka\\Addnew.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-13T07:00:51.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T07:00:51.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "test1demka\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\MainWindow.xaml.cs",
               "RelativeToolTip": "test1demka\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwCwAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAA1wJgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T15:03:06.863Z",
               "EditorCaption": ""
@@ -93,10 +92,10 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Model.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\model\\Model.edmx",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\model\\Model.edmx",
               "RelativeDocumentMoniker": "test1demka\\model\\Model.edmx",
               "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\model\\Model.edmx [Diagram1]",
-              "RelativeToolTip": "test1demka\\model\\Model.edmx [Diagram1]",
+              "RelativeToolTip": "..\\test1demka\\test1demka\\model\\Model.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
               "WhenOpened": "2025-06-13T10:58:54.256Z"
             },
@@ -104,9 +103,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "request.cs",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\model\\request.cs",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\model\\request.cs",
               "RelativeDocumentMoniker": "test1demka\\model\\request.cs",
-              "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\model\\request.cs",
+              "ToolTip": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\model\\request.cs",
               "RelativeToolTip": "test1demka\\model\\request.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,11 +113,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\MainWindow.xaml",
               "RelativeDocumentMoniker": "test1demka\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user123\\source\\repos\\test1demka\\test1demka\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user123\\source\\repos\\examv1\\test1demka\\MainWindow.xaml",
               "RelativeToolTip": "test1demka\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-11T15:03:07.765Z",

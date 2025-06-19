@@ -147,5 +147,34 @@ namespace test1demka
             }
             LoadData();
         }
+
+        private void cbSort_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cbSort.SelectedIndex == 0) return;
+
+
+
+            int selectedSortIndex = cbSort.SelectedIndex;
+
+
+          
+            var sortedRequests = requests.AsQueryable(); // Конвертируем в IQueryable для сортировки
+
+            switch (selectedSortIndex)
+            {
+                case 0:
+                    sortedRequests = sortedRequests.OrderBy(x => x.clientID);
+                    break;
+                case 1:
+                    sortedRequests = sortedRequests.OrderBy(x => x.climateTechModel);
+                    break;
+               
+                    // Добавьте другие варианты сортировки по необходимости
+            }
+
+            requests = sortedRequests.ToList();
+            datagrid.ItemsSource = requests;
+            ShowCurrentPage();
+        }
     }
 }
