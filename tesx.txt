@@ -1,0 +1,8 @@
+https://github.com/123129100/examv1.git
+
+
+
+dir /s /b *.sql | findstr /i /r "\.sql$"
+
+
+for /r %i in (*.sql) do @echo %i | find ".sql" >nul && echo %i
